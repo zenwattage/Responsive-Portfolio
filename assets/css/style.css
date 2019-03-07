@@ -272,9 +272,12 @@ div.gallery {
         float: none;
         width: 100%;
     }
+
+    .row1 {
+    
+    }
     
     .row2 {
-        float: none;
     }
 
     div.img {
@@ -368,7 +371,6 @@ div.gallery {
 
     .row1 {
         margin-left: 20px;
-        display: flex;
         height: 100%;
     }
     .row2 {
@@ -386,7 +388,9 @@ div.gallery {
         margin-left: 5px;
     }
 
-    #form {
+    div#form {
+        margin-right: 20px;
+        margin-left: 20px;
         width: auto;
     }
     
@@ -397,9 +401,6 @@ div.gallery {
     textarea {
         width: 50%;
     }
-
-
-    
 
 
 }
