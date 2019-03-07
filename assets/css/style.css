@@ -41,13 +41,8 @@ ul {
     
 }
 
-li {
-    display: inline;
-    
-}
-
 li a {
-    display: inline;
+    display: block;
     color: #777777 ;
     text-align: center;
     padding: 14px 16px;
@@ -56,6 +51,9 @@ li a {
     
 }
 /*--------------End Navbar ----------------*/
+
+
+
 main {
     background-color: #ffffff;
     border-color: #dddddd; 
@@ -71,9 +69,9 @@ main.header {
     border-color: #cccccc;
 }
 
-.heading {
-    font-family: 'Georgia', Times, Times New Roman, serif;
+heading {
     color: #4aaaa5;
+    margin-bottom: 20px;
 }
 
 heading hr {
@@ -162,16 +160,6 @@ p  {
     flex-grow: 1;
 }
 
-@media only screen and (min-width: 800px) {
-    #form input{
-      background-color: lightblue;
-      width: 630px ;
-    }
-
-    #form textarea{
-        columns: 5;
-    }
-  }
 
 button {
     font-size: 100%;
@@ -211,6 +199,23 @@ div.gallery {
     width: 100%;
     height: auto;
   }
+
+  div.gallery2 {
+    margin: 5px;
+    border: 1px solid #cccccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery2:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery2 img {
+    width: 100%;
+    height: auto;
+  }
+  
   
   div.desc {
     color: white;
@@ -218,3 +223,137 @@ div.gallery {
     text-align: center;
     background-color: #4aaaa5;
   }
+
+
+
+/*----  media queries ------*/
+
+/*
+
+5. Use three `@media screen` tags, each with one of these `max-width`s: `980px`, `768px` and `640px`.
+
+7. Make the position of the header `static` (the default positioning) when the screen is `640px` wide. The header design takes up a lot of room; you don't want it to stick to the top of a small screen and leave no room for the rest of your site.
+
+*/
+
+@media only screen and (max-width: 640px) {
+
+
+    heading {
+        position: static;
+    }
+
+    #myface {
+        float: none;
+        width: 100%;
+        align-content: center;
+    }
+
+    p {
+        width: 50%;
+        
+    }
+
+    li a{
+        float: none;
+        width: 100%;
+    }
+    
+    .row2 {
+        float: none;
+    }
+
+    div.img {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    section.main {
+        width: auto;
+    }
+
+    .navs {
+        width: 30%;
+        display: inline-flex;
+    }
+
+    div#form {
+        width: auto;
+    }
+
+
+}
+@media only screen and (max-width: 768px) {
+    div.portfolio {
+        width: 50%;
+        padding-right: 10px;
+    }
+
+    .row1 {
+        display: flex;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+
+    .row2 {
+        margin-left: 20px;
+        
+        background-color: blue;
+    }
+
+    ul {
+        width: auto;
+        height: auto;
+    }
+
+
+    #home {
+        margin-left: 5px;
+    }
+
+
+}
+@media only screen and (max-width: 980px) {
+
+    div.portfolio {
+        width: 50%;
+        padding-right: 10px;
+        height: fit-content;
+        padding-bottom: 250px;
+    }
+
+
+    .row1 {
+        margin-left: 20px;
+        display: flex;
+        height: 100%;
+    }
+    .row2 {
+        margin-left: 20px;
+        float: left;
+        background-color: blue;
+    }
+    
+
+    main, body, form, .portfolio, hr {
+        width: auto,fit-content;
+    }
+    
+    #home {
+        margin-left: 5px;
+    }
+
+    
+
+
+}
+
+
+/*
+
+
+8. Be sure to include the `viewport` tag in all your HTML files, otherwise your media-queries won't function as expected on mobile devices. _(Hint: You won't need to use exact pixels for anything other than the container)_
+
+*/
