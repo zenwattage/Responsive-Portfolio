@@ -273,12 +273,6 @@ div.gallery {
         width: 100%;
     }
 
-    .row1 {
-    
-    }
-    
-    .row2 {
-    }
 
     div.img {
         margin: 20px;
@@ -310,8 +304,15 @@ div.gallery {
         margin-left: 40px;
     }
 
+    input.inputs {
+        width: 80%;
+    }
+
 }
+
+
 @media only screen and (max-width: 768px) {
+
     div.portfolio {
         margin: 0;
         width: 50%;
@@ -338,14 +339,6 @@ div.gallery {
 
     #home {
         margin-left: 5px;
-    }
-
-    #form {
-        width: 50%;
-    }
-
-    input.inputs {
-        width: 50%;
     }
 
 
@@ -401,14 +394,4 @@ div.gallery {
     textarea {
         width: 50%;
     }
-
-
 }
-
-
-/*
-
-
-8. Be sure to include the `viewport` tag in all your HTML files, otherwise your media-queries won't function as expected on mobile devices. _(Hint: You won't need to use exact pixels for anything other than the container)_
-
-*/
