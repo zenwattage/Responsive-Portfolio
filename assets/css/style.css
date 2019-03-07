@@ -170,6 +170,15 @@ button {
     background-color: #4aaaa5;
 }
 
+/*contact form input fields*/
+input.inputs { 
+    width: 600px;
+}
+
+textarea {
+    width: 900px;
+}
+
 
 
 
@@ -240,17 +249,22 @@ div.gallery {
 
 
     heading {
+        
         position: static;
     }
 
     #myface {
         float: none;
-        width: 100%;
+        width: 50%;
+        margin-left: 40px;
         align-content: center;
     }
 
-    p {
+    p , p#top{
+        margin-left: 40px;
         width: 50%;
+        height: 200px;
+        overflow: hidden;
         
     }
 
@@ -269,7 +283,10 @@ div.gallery {
         flex-direction: column;
     }
 
-    
+    main {
+        margin-right: 150px;
+        margin-left: 50px;
+    }
     section.main {
         width: auto;
     }
@@ -277,16 +294,23 @@ div.gallery {
     .navs {
         width: 30%;
         display: inline-flex;
+        height: 40px;
     }
 
     div#form {
-        width: auto;
+        width: 50%;
     }
 
+
+
+    #aboutme {
+        margin-left: 40px;
+    }
 
 }
 @media only screen and (max-width: 768px) {
     div.portfolio {
+        margin: 0;
         width: 50%;
         padding-right: 10px;
     }
@@ -313,9 +337,26 @@ div.gallery {
         margin-left: 5px;
     }
 
+    #form {
+        width: 50%;
+    }
+
+    input.inputs {
+        width: 50%;
+    }
+
 
 }
 @media only screen and (max-width: 980px) {
+
+    main {
+        width: 500px;
+        height: 500px;
+    }
+
+    p {
+        height: 500px;
+    }
 
     div.portfolio {
         width: 50%;
@@ -344,6 +385,19 @@ div.gallery {
     #home {
         margin-left: 5px;
     }
+
+    #form {
+        width: auto;
+    }
+    
+    input.inputs {
+        width: 50%;
+    }
+
+    textarea {
+        width: 50%;
+    }
+
 
     
 
